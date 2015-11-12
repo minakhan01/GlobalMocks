@@ -1,0 +1,126 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.whole-container {
+  width: 400%;
+  display: flex;
+}
+
+.container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.news {
+  flex: 3;
+  text-align: center;
+  padding: 0 25px;
+  overflow: scroll;
+  height: 100%;
+}
+
+#map {
+  flex: 10;
+}
+
+.picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.picture, .info {
+  flex: 1;
+}
+
+.user-pic {
+  flex-direction: column;
+}
+
+.lil-pic {
+  flex: 1;
+  display: flex;
+}
+
+.lil-pic img {
+  align-self: stretch;
+  margin: 10px;
+}
+
+.big-pic img {
+  align-self: stretch;
+  margin: 50px;
+  flex: 1;
+}
+
+.big-pic {
+  flex: 3;
+  display: flex;
+}
+
+.name {
+  align-self: center;
+  margin: 0 0 0 25px;
+}
+
+.info {
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.move1 {
+  animation-duration: 2s;
+  animation-name: moveone;
+  animation-fill-mode: forwards;
+}
+
+.move2 {
+  animation-duration: 2s;
+  animation-name: movetwo;
+  animation-fill-mode: forwards;
+}
+
+.move3 {
+  animation-duration: 2s;
+  animation-name: movethree;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveone {
+  to {
+    margin-left: -100%;
+  }
+}
+
+@keyframes movetwo {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: -200%;
+  }
+}
+
+@keyframes movethree {
+  from {
+    margin-left: -200%;
+  }
+
+  to {
+    margin-left: -300%;
+  }
+}
